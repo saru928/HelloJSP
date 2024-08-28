@@ -8,6 +8,19 @@
 </head>
 <body>
 <p>こんにちは！</p>
-<% out.println(new java.util.Date()); %>
+<% out.println(new java.util.Date()); %>t
+
+<%! static int add(int a, int b){
+	return a + b;
+	}
+%>
+<p>1+2=<%=add(1, 2) %></p>
+<p>1+2=<%=add(3, 4) %></p>
+
+<%! static int countA=0; %>
+<% int countB=0; countA++; countB++; %>
+<P>宣言による変数countA=<%=countA %></P>
+<p>スクリプトレットによる変数countB=<%=countB %></p>
+
 </body>
 </html>
