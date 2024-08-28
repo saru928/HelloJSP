@@ -22,5 +22,8 @@
 <P>宣言による変数countA=<%=countA %></P>
 <p>スクリプトレットによる変数countB=<%=countB %></p>
 
+<P><% out.println(Math.random()); %></P>
+<p><%=Math.random() %></p>
+
 </body>
 </html>
